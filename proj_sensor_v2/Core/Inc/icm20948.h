@@ -9,6 +9,9 @@
 #ifndef __ICM20948_H__
 #define	__ICM20948_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "spi.h"			// header from stm32cubemx code generate
 #include <stdbool.h>
@@ -272,5 +275,9 @@ void icm20948_accel_full_scale_select(accel_full_scale full_scale);
 #define MAG_CNTL3						0x32
 #define MAG_TS1							0x33
 #define MAG_TS2							0x34
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* __ICM20948_H__ */

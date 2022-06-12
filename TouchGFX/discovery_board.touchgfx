@@ -37,7 +37,7 @@
             "DataSeed": -1787094251,
             "NumberOfValues": 100,
             "MaxY": 100.0,
-            "Precision": "1",
+            "Precision": "0.0001",
             "LastIndex": 99,
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
@@ -47,10 +47,11 @@
             "LabelSizeRight": 4,
             "PaddingBottom": 2,
             "PaddingLeft": 6,
-            "GraphType": "GraphScroll",
+            "GraphType": "GraphWrapClear",
             "GraphDrawers": [
               {
-                "Type": "AreaDrawer",
+                "Type": "LineDrawer",
+                "LineWidth": 3,
                 "FileNameImage": "",
                 "Color": {
                   "Red": 20,
@@ -59,15 +60,20 @@
                 }
               }
             ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 10.0,
+              "LineWidth": 1
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Interval": 10.0,
+              "LineWidth": 1
+            },
             "XAxisLabel": {
               "Type": "GraphLabel",
               "Interval": 10.0,
               "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
               "TextId": "__SingleUse_RW3T",
               "TextRotation": "0",
               "Position": "Bottom"
@@ -76,11 +82,6 @@
               "Type": "GraphLabel",
               "Interval": 10.0,
               "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
               "TextId": "__SingleUse_OF0Y",
               "TextRotation": "0",
               "Position": "Left"

@@ -24,28 +24,40 @@ Screen1ViewBase::Screen1ViewBase()
     boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     boxWithBorder1.setBorderSize(5);
 
-    dynamicGraph1.setScale(1);
+    dynamicGraph1.setScale(10000);
     dynamicGraph1.setPosition(7, 9, 306, 222);
     dynamicGraph1.setGraphAreaMargin(10, 23, 4, 20);
     dynamicGraph1.setGraphAreaPadding(0, 6, 0, 2);
     dynamicGraph1.setGraphRangeY(0, 100);
 
-    dynamicGraph1MajorXAxisLabel.setScale(1);
+    dynamicGraph1MajorXAxisGrid.setScale(10000);
+    dynamicGraph1MajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph1MajorXAxisGrid.setInterval(10);
+    dynamicGraph1MajorXAxisGrid.setLineWidth(1);
+    dynamicGraph1.addGraphElement(dynamicGraph1MajorXAxisGrid);
+
+    dynamicGraph1MajorYAxisGrid.setScale(10000);
+    dynamicGraph1MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    dynamicGraph1MajorYAxisGrid.setInterval(10);
+    dynamicGraph1MajorYAxisGrid.setLineWidth(1);
+    dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
+
+    dynamicGraph1MajorXAxisLabel.setScale(10000);
     dynamicGraph1MajorXAxisLabel.setInterval(10);
     dynamicGraph1MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_RW3T));
-    dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     dynamicGraph1.addBottomElement(dynamicGraph1MajorXAxisLabel);
 
-    dynamicGraph1MajorYAxisLabel.setScale(1);
+    dynamicGraph1MajorYAxisLabel.setScale(10000);
     dynamicGraph1MajorYAxisLabel.setInterval(10);
     dynamicGraph1MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_OF0Y));
-    dynamicGraph1MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     dynamicGraph1.addLeftElement(dynamicGraph1MajorYAxisLabel);
 
-    dynamicGraph1Area1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    dynamicGraph1Area1.setPainter(dynamicGraph1Area1Painter);
-    dynamicGraph1Area1.setBaseline(0);
-    dynamicGraph1.addGraphElement(dynamicGraph1Area1);
+    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    dynamicGraph1Line1.setPainter(dynamicGraph1Line1Painter);
+    dynamicGraph1Line1.setLineWidth(3);
+    dynamicGraph1.addGraphElement(dynamicGraph1Line1);
 
     dynamicGraph1.addDataPoint(88.45341815588658f);
     dynamicGraph1.addDataPoint(96.79559259323914f);

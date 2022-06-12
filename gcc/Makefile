@@ -122,8 +122,8 @@ endif
 
 endif
 
-target_executable := target.elf
-target_hex := target.hex
+target_executable := moj.elf
+target_hex := moj.hex
 
 ########### Compiler options #################
 # Defines the assembler binary and options. These are optional and only

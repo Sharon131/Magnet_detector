@@ -1,5 +1,7 @@
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <math.h>
+#include <cstdlib>
+
 
 Screen1View::Screen1View()
 {
@@ -23,6 +25,7 @@ void Screen1View::handleTickEvent()
 
     if (tickCounter % 2 == 0)
     {
-        dynamicGraph1.addDataPoint((sinf(tickCounter * 0.07f) + 1.5f) * 30 + rand() % 20);
+        dynamicGraph1.addDataPoint(sinf(tickCounter * 0.07f)*10 + 50 + rand()%10);
+
     }
 }

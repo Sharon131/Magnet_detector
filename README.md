@@ -1,10 +1,22 @@
 # Magnet detector
 
-Software for detecting magnets. Using sensor ICM20948.
+Software for detecting magnets. Using sensor ICM20948 with SPI as communication interface.
 
 ## Status
 
 Project is currently under development. 
+
+## Demonstration video
+![mag_sensor_demo](mag_sensor_demo.gif)
+
+
+## SPI pin configuration
+| Pin Name      |Signal On Pin  | 
+| ------------- |:-------------:|
+| PC10          | SPI3_SCK      |
+| PC11          | SPI3_MISO     |
+| PD6           | SPI_MOSI      | 
+| PD2           | SPI_CS as GPIO Out      |
 
 ## Authors
 

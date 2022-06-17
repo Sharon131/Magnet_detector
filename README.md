@@ -7,8 +7,8 @@ Software for detecting magnets. Using sensor ICM20948 with SPI as communication 
 Project is currently under development. 
 
 ## Demonstration video
-![mag_sensor_demo](mag_sensor_demo.gif)
 
+<img src="mag_sensor_demo.gif" width="300" height="500"/>
 
 ## SPI pin configuration
 | Pin Name      |Signal On Pin  | 

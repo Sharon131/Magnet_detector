@@ -19,154 +19,122 @@ Screen1ViewBase::Screen1ViewBase()
     image1.setXY(0, 0);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_320X240PX_ID));
 
-    boxWithBorder1.setPosition(7, 9, 306, 222);
+    boxWithBorder1.setPosition(0, 0, 320, 240);
     boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     boxWithBorder1.setBorderSize(5);
 
-    dynamicGraph1.setScale(10000);
-    dynamicGraph1.setPosition(7, 9, 306, 222);
-    dynamicGraph1.setGraphAreaMargin(10, 23, 4, 20);
-    dynamicGraph1.setGraphAreaPadding(0, 6, 0, 2);
-    dynamicGraph1.setGraphRangeY(0, 100);
+    x_waveform.setScale(1);
+    x_waveform.setPosition(7, 9, 306, 222);
+    x_waveform.setGraphAreaMargin(10, 23, 4, 20);
+    x_waveform.setGraphAreaPadding(0, 6, 0, 2);
+    x_waveform.setGraphRangeY(-1500, 1500);
 
-    dynamicGraph1MajorXAxisGrid.setScale(10000);
-    dynamicGraph1MajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dynamicGraph1MajorXAxisGrid.setInterval(10);
-    dynamicGraph1MajorXAxisGrid.setLineWidth(1);
-    dynamicGraph1.addGraphElement(dynamicGraph1MajorXAxisGrid);
+    x_waveformMajorXAxisGrid.setScale(1);
+    x_waveformMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    x_waveformMajorXAxisGrid.setInterval(1);
+    x_waveformMajorXAxisGrid.setLineWidth(1);
+    x_waveform.addGraphElement(x_waveformMajorXAxisGrid);
 
-    dynamicGraph1MajorYAxisGrid.setScale(10000);
-    dynamicGraph1MajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dynamicGraph1MajorYAxisGrid.setInterval(10);
-    dynamicGraph1MajorYAxisGrid.setLineWidth(1);
-    dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
+    x_waveformMajorYAxisGrid.setScale(1);
+    x_waveformMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    x_waveformMajorYAxisGrid.setInterval(700);
+    x_waveformMajorYAxisGrid.setLineWidth(1);
+    x_waveform.addGraphElement(x_waveformMajorYAxisGrid);
 
-    dynamicGraph1MajorXAxisLabel.setScale(10000);
-    dynamicGraph1MajorXAxisLabel.setInterval(10);
-    dynamicGraph1MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_RW3T));
-    dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dynamicGraph1.addBottomElement(dynamicGraph1MajorXAxisLabel);
+    x_waveformMajorXAxisLabel.setScale(1);
+    x_waveformMajorXAxisLabel.setInterval(10);
+    x_waveformMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_I06W));
+    x_waveformMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    x_waveform.addBottomElement(x_waveformMajorXAxisLabel);
 
-    dynamicGraph1MajorYAxisLabel.setScale(10000);
-    dynamicGraph1MajorYAxisLabel.setInterval(10);
-    dynamicGraph1MajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_OF0Y));
-    dynamicGraph1MajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    dynamicGraph1.addLeftElement(dynamicGraph1MajorYAxisLabel);
+    x_waveformMajorYAxisLabel.setScale(1);
+    x_waveformMajorYAxisLabel.setInterval(640);
+    x_waveformMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_C3VJ));
+    x_waveformMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    x_waveform.addLeftElement(x_waveformMajorYAxisLabel);
 
-    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    dynamicGraph1Line1.setPainter(dynamicGraph1Line1Painter);
-    dynamicGraph1Line1.setLineWidth(3);
-    dynamicGraph1.addGraphElement(dynamicGraph1Line1);
+    x_waveformDots1Painter.setColor(touchgfx::Color::getColorFromRGB(23, 29, 194));
+    x_waveformDots1.setPainter(x_waveformDots1Painter);
+    x_waveformDots1.setDotWidth(8);
+    x_waveform.addGraphElement(x_waveformDots1);
 
-    dynamicGraph1.addDataPoint(88.45341815588658f);
-    dynamicGraph1.addDataPoint(96.79559259323914f);
-    dynamicGraph1.addDataPoint(98.77101511417887f);
-    dynamicGraph1.addDataPoint(93.67789817634397f);
-    dynamicGraph1.addDataPoint(82.3508348027487f);
-    dynamicGraph1.addDataPoint(66.9729047998696f);
-    dynamicGraph1.addDataPoint(50.56470459611556f);
-    dynamicGraph1.addDataPoint(36.274482041719f);
-    dynamicGraph1.addDataPoint(26.64198115159527f);
-    dynamicGraph1.addDataPoint(23.014855052398637f);
-    dynamicGraph1.addDataPoint(25.25901322053461f);
-    dynamicGraph1.addDataPoint(31.832192748290815f);
-    dynamicGraph1.addDataPoint(40.201144050910386f);
-    dynamicGraph1.addDataPoint(47.49869043916325f);
-    dynamicGraph1.addDataPoint(51.258330026438536f);
-    dynamicGraph1.addDataPoint(50.04522578338482f);
-    dynamicGraph1.addDataPoint(43.82800493208126f);
-    dynamicGraph1.addDataPoint(33.99953471350631f);
-    dynamicGraph1.addDataPoint(23.041054824296175f);
-    dynamicGraph1.addDataPoint(13.911698686696782f);
-    dynamicGraph1.addDataPoint(9.312983766749507f);
-    dynamicGraph1.addDataPoint(11.008798393310006f);
-    dynamicGraph1.addDataPoint(19.3681045222329f);
-    dynamicGraph1.addDataPoint(33.243341682764566f);
-    dynamicGraph1.addDataPoint(50.21554744813791f);
-    dynamicGraph1.addDataPoint(67.14760130822816f);
-    dynamicGraph1.addDataPoint(80.91171420992143f);
-    dynamicGraph1.addDataPoint(89.11463968311958f);
-    dynamicGraph1.addDataPoint(90.64468802504638f);
-    dynamicGraph1.addDataPoint(85.90816001273048f);
-    dynamicGraph1.addDataPoint(76.69873464467548f);
-    dynamicGraph1.addDataPoint(65.73304298337817f);
-    dynamicGraph1.addDataPoint(55.96712626775814f);
-    dynamicGraph1.addDataPoint(49.861880779490235f);
-    dynamicGraph1.addDataPoint(48.777758914681556f);
-    dynamicGraph1.addDataPoint(52.64704014805653f);
-    dynamicGraph1.addDataPoint(60.00369041120198f);
-    dynamicGraph1.addDataPoint(68.36297882118825f);
-    dynamicGraph1.addDataPoint(74.85707774567423f);
-    dynamicGraph1.addDataPoint(76.96994349316275f);
-    dynamicGraph1.addDataPoint(73.19025618649248f);
-    dynamicGraph1.addDataPoint(63.42106394282278f);
-    dynamicGraph1.addDataPoint(49.0442833328306f);
-    dynamicGraph1.addDataPoint(32.62261901736949f);
-    dynamicGraph1.addDataPoint(17.310285137928474f);
-    dynamicGraph1.addDataPoint(6.115287452546738f);
-    dynamicGraph1.addDataPoint(1.192493535619814f);
-    dynamicGraph1.addDataPoint(3.339414546568726f);
-    dynamicGraph1.addDataPoint(11.817201629094418f);
-    dynamicGraph1.addDataPoint(24.540042223487067f);
-    dynamicGraph1.addDataPoint(38.58624325034302f);
-    dynamicGraph1.addDataPoint(50.90585867685867f);
-    dynamicGraph1.addDataPoint(59.05191153303324f);
-    dynamicGraph1.addDataPoint(61.756803374850094f);
-    dynamicGraph1.addDataPoint(59.21369123449077f);
-    dynamicGraph1.addDataPoint(52.995088327181385f);
-    dynamicGraph1.addDataPoint(45.62999721621146f);
-    dynamicGraph1.addDataPoint(39.944591865987164f);
-    dynamicGraph1.addDataPoint(38.329491514245085f);
-    dynamicGraph1.addDataPoint(42.11464245746318f);
-    dynamicGraph1.addDataPoint(51.20644033592009f);
-    dynamicGraph1.addDataPoint(64.07744003451151f);
-    dynamicGraph1.addDataPoint(78.1124740878355f);
-    dynamicGraph1.addDataPoint(90.22756547804471f);
-    dynamicGraph1.addDataPoint(97.61094790446327f);
-    dynamicGraph1.addDataPoint(98.40532810842686f);
-    dynamicGraph1.addDataPoint(92.1645923892867f);
-    dynamicGraph1.addDataPoint(79.97306216893094f);
-    dynamicGraph1.addDataPoint(64.19770042709085f);
-    dynamicGraph1.addDataPoint(47.93323092016901f);
-    dynamicGraph1.addDataPoint(34.27505000971326f);
-    dynamicGraph1.addDataPoint(25.596709042311456f);
-    dynamicGraph1.addDataPoint(23.007479576728436f);
-    dynamicGraph1.addDataPoint(26.12124814452932f);
-    dynamicGraph1.addDataPoint(33.1917151008776f);
-    dynamicGraph1.addDataPoint(41.57918110451205f);
-    dynamicGraph1.addDataPoint(48.43305343143547f);
-    dynamicGraph1.addDataPoint(51.421551361733904f);
-    dynamicGraph1.addDataPoint(49.328667539103506f);
-    dynamicGraph1.addDataPoint(42.371197252997504f);
-    dynamicGraph1.addDataPoint(32.15744491064001f);
-    dynamicGraph1.addDataPoint(21.297246678557975f);
-    dynamicGraph1.addDataPoint(12.758640745300227f);
-    dynamicGraph1.addDataPoint(9.128865614618668f);
-    dynamicGraph1.addDataPoint(11.961113686424348f);
-    dynamicGraph1.addDataPoint(21.367759652344184f);
-    dynamicGraph1.addDataPoint(35.960728676426136f);
-    dynamicGraph1.addDataPoint(53.154863136839644f);
-    dynamicGraph1.addDataPoint(69.76148356647687f);
-    dynamicGraph1.addDataPoint(82.72838413632032f);
-    dynamicGraph1.addDataPoint(89.84670194185696f);
-    dynamicGraph1.addDataPoint(90.25322454599795f);
-    dynamicGraph1.addDataPoint(84.60666227402217f);
-    dynamicGraph1.addDataPoint(74.89614571965271f);
-    dynamicGraph1.addDataPoint(63.93003197618734f);
-    dynamicGraph1.addDataPoint(54.63114185204118f);
-    dynamicGraph1.addDataPoint(49.311667634936654f);
-    dynamicGraph1.addDataPoint(49.10565097075238f);
-    dynamicGraph1.addDataPoint(53.69804203592699f);
-    dynamicGraph1.addDataPoint(61.416404514341615f);
+    x_waveformLine1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    x_waveformLine1.setPainter(x_waveformLine1Painter);
+    x_waveformLine1.setLineWidth(2);
+    x_waveform.addGraphElement(x_waveformLine1);
+
+    y_waveform.setScale(1);
+    y_waveform.setGraphRangeX(0, 49);
+    y_waveform.setPosition(7, 9, 306, 222);
+    y_waveform.setGraphAreaMargin(10, 23, 4, 20);
+    y_waveform.setGraphAreaPadding(0, 6, 0, 2);
+    y_waveform.setGraphRangeY(-1500, 1500);
+
+    y_waveformMajorXAxisGrid.setScale(1);
+    y_waveformMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    y_waveformMajorXAxisGrid.setInterval(1);
+    y_waveformMajorXAxisGrid.setLineWidth(1);
+    y_waveform.addGraphElement(y_waveformMajorXAxisGrid);
+
+    y_waveformMajorYAxisGrid.setScale(1);
+    y_waveformMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    y_waveformMajorYAxisGrid.setInterval(700);
+    y_waveformMajorYAxisGrid.setLineWidth(1);
+    y_waveform.addGraphElement(y_waveformMajorYAxisGrid);
+
+    y_waveformDots1Painter.setColor(touchgfx::Color::getColorFromRGB(194, 23, 23));
+    y_waveformDots1.setPainter(y_waveformDots1Painter);
+    y_waveformDots1.setDotWidth(8);
+    y_waveform.addGraphElement(y_waveformDots1);
+
+    y_waveformLine1Painter.setColor(touchgfx::Color::getColorFromRGB(194, 23, 23));
+    y_waveformLine1.setPainter(y_waveformLine1Painter);
+    y_waveformLine1.setLineWidth(2);
+    y_waveform.addGraphElement(y_waveformLine1);
+
+    z_waveform.setScale(1);
+    z_waveform.setPosition(7, 9, 306, 222);
+    z_waveform.setGraphAreaMargin(10, 23, 4, 20);
+    z_waveform.setGraphAreaPadding(0, 6, 0, 2);
+    z_waveform.setGraphRangeY(-1500, 1500);
+
+    z_waveformMajorXAxisGrid.setScale(1);
+    z_waveformMajorXAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    z_waveformMajorXAxisGrid.setInterval(1);
+    z_waveformMajorXAxisGrid.setLineWidth(1);
+    z_waveform.addGraphElement(z_waveformMajorXAxisGrid);
+
+    z_waveformMajorYAxisGrid.setScale(1);
+    z_waveformMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    z_waveformMajorYAxisGrid.setInterval(700);
+    z_waveformMajorYAxisGrid.setLineWidth(1);
+    z_waveform.addGraphElement(z_waveformMajorYAxisGrid);
+
+    z_waveformDots1Painter.setColor(touchgfx::Color::getColorFromRGB(51, 255, 0));
+    z_waveformDots1.setPainter(z_waveformDots1Painter);
+    z_waveformDots1.setDotWidth(8);
+    z_waveform.addGraphElement(z_waveformDots1);
+
+    z_waveformLine1Painter.setColor(touchgfx::Color::getColorFromRGB(51, 255, 0));
+    z_waveformLine1.setPainter(z_waveformLine1Painter);
+    z_waveformLine1.setLineWidth(2);
+    z_waveform.addGraphElement(z_waveformLine1);
 
     add(__background);
     add(image1);
     add(boxWithBorder1);
-    add(dynamicGraph1);
+    add(x_waveform);
+    add(y_waveform);
+    add(z_waveform);
 }
 
 void Screen1ViewBase::setupScreen()
+{
+
+}
+
+void Screen1ViewBase::action1()
 {
 
 }

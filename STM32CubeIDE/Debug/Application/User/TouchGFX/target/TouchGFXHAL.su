@@ -7,19 +7,19 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:1040:21:virtual touchgfx::DMAType touchgfx::HAL::getDMAType()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:1177:18:virtual void touchgfx::HAL::InvalidateCache()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:1187:18:virtual void touchgfx::HAL::FlushCache()	0	static
-../../TouchGFX/target/TouchGFXHAL.hpp:31:7:TouchGFXHAL::~TouchGFXHAL()	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:30:6:virtual void TouchGFXHAL::initialize()	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:41:6:virtual void TouchGFXHAL::taskEntry()	8	static
+../../TouchGFX/target/TouchGFXHAL.hpp:34:7:TouchGFXHAL::~TouchGFXHAL()	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:34:6:virtual void TouchGFXHAL::initialize()	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:45:6:virtual void TouchGFXHAL::taskEntry()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:616:18:virtual void touchgfx::HAL::backPorchExited()	8	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:63:11:virtual uint16_t* TouchGFXHAL::getTFTFrameBuffer() const	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:78:6:virtual void TouchGFXHAL::setTFTFrameBuffer(uint16_t*)	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:95:6:virtual void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect&)	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:111:6:virtual void TouchGFXHAL::configureInterrupts()	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:124:6:virtual void TouchGFXHAL::enableInterrupts()	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:137:6:virtual void TouchGFXHAL::disableInterrupts()	0	static
-C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:151:6:virtual void TouchGFXHAL::enableLCDControllerInterrupt()	0	static
-../../TouchGFX/target/TouchGFXHAL.hpp:102:18:virtual void TouchGFXHAL::flushFrameBuffer()	0	static
-../../TouchGFX/target/TouchGFXHAL.hpp:31:7:virtual TouchGFXHAL::~TouchGFXHAL()	8	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:67:11:virtual uint16_t* TouchGFXHAL::getTFTFrameBuffer() const	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:82:6:virtual void TouchGFXHAL::setTFTFrameBuffer(uint16_t*)	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:99:6:virtual void TouchGFXHAL::flushFrameBuffer(const touchgfx::Rect&)	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:115:6:virtual void TouchGFXHAL::configureInterrupts()	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:128:6:virtual void TouchGFXHAL::enableInterrupts()	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:141:6:virtual void TouchGFXHAL::disableInterrupts()	0	static
+C:/Users/thomas/Desktop/Magnet_detector/TouchGFX/target/TouchGFXHAL.cpp:155:6:virtual void TouchGFXHAL::enableLCDControllerInterrupt()	0	static
+../../TouchGFX/target/TouchGFXHAL.hpp:105:18:virtual void TouchGFXHAL::flushFrameBuffer()	0	static
+../../TouchGFX/target/TouchGFXHAL.hpp:34:7:virtual TouchGFXHAL::~TouchGFXHAL()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:298:28:virtual touchgfx::BlitOperations touchgfx::HAL::getBlitCaps()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:1150:18:virtual void touchgfx::HAL::performDisplayOrientationChange()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:697:18:virtual void touchgfx::HAL::setFrameBufferStartAddresses(void*, void*, void*)	16	static

@@ -22,6 +22,11 @@ public:
     virtual ~Screen1ViewBase() {}
     virtual void setupScreen();
 
+    /*
+     * Custom Actions
+     */
+    virtual void action1();
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -33,13 +38,29 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image image1;
     touchgfx::BoxWithBorder boxWithBorder1;
-    touchgfx::GraphWrapAndClear<100> dynamicGraph1;
-    touchgfx::GraphElementLine dynamicGraph1Line1;
-    touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
-    touchgfx::GraphElementGridX dynamicGraph1MajorXAxisGrid;
-    touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
-    touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
-    touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<50> x_waveform;
+    touchgfx::GraphElementLine x_waveformLine1;
+    touchgfx::PainterRGB565 x_waveformLine1Painter;
+    touchgfx::GraphElementDots x_waveformDots1;
+    touchgfx::PainterRGB565 x_waveformDots1Painter;
+    touchgfx::GraphElementGridX x_waveformMajorXAxisGrid;
+    touchgfx::GraphElementGridY x_waveformMajorYAxisGrid;
+    touchgfx::GraphLabelsX x_waveformMajorXAxisLabel;
+    touchgfx::GraphLabelsY x_waveformMajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<50> y_waveform;
+    touchgfx::GraphElementLine y_waveformLine1;
+    touchgfx::PainterRGB565 y_waveformLine1Painter;
+    touchgfx::GraphElementDots y_waveformDots1;
+    touchgfx::PainterRGB565 y_waveformDots1Painter;
+    touchgfx::GraphElementGridX y_waveformMajorXAxisGrid;
+    touchgfx::GraphElementGridY y_waveformMajorYAxisGrid;
+    touchgfx::GraphWrapAndClear<50> z_waveform;
+    touchgfx::GraphElementLine z_waveformLine1;
+    touchgfx::PainterRGB565 z_waveformLine1Painter;
+    touchgfx::GraphElementDots z_waveformDots1;
+    touchgfx::PainterRGB565 z_waveformDots1Painter;
+    touchgfx::GraphElementGridX z_waveformMajorXAxisGrid;
+    touchgfx::GraphElementGridY z_waveformMajorYAxisGrid;
 
 private:
 

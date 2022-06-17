@@ -6,10 +6,10 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_OF0Y" Alignment="Right" TypographyId="Small">
+      <Text Id="__SingleUse_C3VJ" Alignment="Right" TypographyId="Small">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_RW3T" Alignment="Left" TypographyId="Small">
+      <Text Id="__SingleUse_I06W" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
     </TextGroup>
@@ -17,6 +17,6 @@
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
+    <Typography Id="Small" Font="verdana.ttf" Size="8" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
   </Typographies>
 </TextDatabase>

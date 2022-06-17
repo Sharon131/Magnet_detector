@@ -11,9 +11,9 @@ TouchGFX/build/STM32F429IDISCO/Core/Src/main.o: Core/Src/main.c \
  Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
- Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+ Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
  Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
@@ -45,7 +45,8 @@ TouchGFX/build/STM32F429IDISCO/Core/Src/main.o: Core/Src/main.c \
  Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  TouchGFX/App/app_touchgfx.h Drivers/BSP/Components/ili9341/ili9341.h \
- Drivers/BSP/Components/ili9341/../Common/lcd.h
+ Drivers/BSP/Components/ili9341/../Common/lcd.h Core/Inc/icm20948.h \
+ Core/Inc/main.h
 
 Core/Inc/main.h:
 
@@ -77,11 +78,11 @@ Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:
 
-Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h:
-
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:
 
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h:
+
+Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h:
 
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h:
 
@@ -148,3 +149,7 @@ TouchGFX/App/app_touchgfx.h:
 Drivers/BSP/Components/ili9341/ili9341.h:
 
 Drivers/BSP/Components/ili9341/../Common/lcd.h:
+
+Core/Inc/icm20948.h:
+
+Core/Inc/main.h:

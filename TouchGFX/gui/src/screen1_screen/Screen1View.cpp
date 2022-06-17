@@ -1,7 +1,10 @@
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <math.h>
 #include <cstdlib>
+#include "icm20948.h"
 
+extern axises my_mag;
+extern bool received;
 
 Screen1View::Screen1View()
 {
@@ -25,7 +28,14 @@ void Screen1View::handleTickEvent()
 
     if (tickCounter % 2 == 0)
     {
-        dynamicGraph1.addDataPoint(sinf(tickCounter * 0.07f)*10 + 50 + rand()%10);
+//        dynamicGraph1.addDataPoint(sinf(tickCounter * 0.07f)*10 + 50 + rand()%10);
+    	if (received == true)
+    	{
+    		x_waveform.addDataPoint(my_mag.x);
+    		y_waveform.addDataPoint(my_mag.y);
+    		z_waveform.addDataPoint(my_mag.z);
+    		received = false;
+    	}
 
     }
 }

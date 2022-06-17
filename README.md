@@ -6,4 +6,5 @@ Succesfull ICM20948 magnetic data read with STMF429I-DISCO board.
 | ------------- |:-------------:|
 | PC10          | SPI3_SCK      |
 | PC11          | SPI3_MISO     |
-| PD6           | are SPI_MOSI  | 
+| PD6           | SPI_MOSI      | 
+| PD2           | SPI_CS as GPIO Out      |
